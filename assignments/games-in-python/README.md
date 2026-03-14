@@ -1,19 +1,35 @@
 
-# 🎮 Hangman Game Challenge
+# 📘 Assignment: Games in Python
 
-Build the classic word-guessing game using Python strings, loops, and user input.
+## 🎯 Objective
 
-## � What You'll Build
+Build a playable Hangman game in Python using loops, conditionals, and string operations. By completing this assignment, you will practice managing game state and handling user input clearly and correctly.
 
-Create a Hangman game where players guess letters to reveal a hidden word before running out of attempts.
+## 📝 Tasks
 
-**Skills practiced:** String manipulation, loops, conditionals, random selection
+### 🛠️	Create the Hangman Game Loop
 
-## ✅ Must Have's
+#### Description
+Implement the main game flow so a player can guess letters until they either reveal the secret word or run out of attempts.
 
-Your game must:
-- Randomly select words from a predefined list
-- Accept letter guesses and show current progress (_ _ _ format)
-- Track incorrect guesses remaining
-- End when word is guessed or attempts exhausted
-- Display win/lose messages
+#### Requirements
+Completed program should:
+
+- Randomly choose one word from the provided `words` list.
+- Initialize game state variables such as guessed letters, incorrect guesses, and maximum allowed incorrect guesses.
+- Repeatedly prompt the player to enter one letter at a time until the game ends.
+- Display the current word progress after each turn using placeholders for unguessed letters (example: `_ _ n g m a n`).
+
+
+### 🛠️	Handle Guess Validation and End Conditions
+
+#### Description
+Add logic to validate user input, update the game state for correct or incorrect guesses, and show a final game result.
+
+#### Requirements
+Completed program should:
+
+- Reject invalid guesses (for example: empty input, more than one character, or non-letter characters) and ask again.
+- Prevent duplicate guesses from changing the game state.
+- Decrease remaining attempts only for new incorrect guesses.
+- End with a clear win message if the word is guessed or a clear lose message if attempts are exhausted.
